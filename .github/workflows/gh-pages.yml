@@ -19,7 +19,7 @@ jobs:
       - name: Build Gatsby site
         run: npm run-script build
         with:
-          path: "**/docs"
+          path: "**/**/docs"
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
